@@ -1,0 +1,2 @@
+INSERT INTO USERMODEL (id, name, gender, birthDate, cpf, rg, adress, number, complemento, bairro, city, uf, cep, phone, cellphone, email, password) VALUES ('1', 'Jana', 'F', '18/10/1994', '11785685635', '17943279', 'Rua Inocencio Rocha', '51', 'apto 604', 'Santa Maria', 'Uberlandia', 'MG', '38408012', '34991204914', '34991204914', 'jmf@gmail.com', 'jana123');
+insert into usermodel (gender, cpf) values ('femel', '11785685635');
