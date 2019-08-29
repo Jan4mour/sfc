@@ -6,9 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.util.Map;
 
-/**
- * Created by Jana on 09/07/2017.
- */
+
 @Entity
 public class Company {
     @Id

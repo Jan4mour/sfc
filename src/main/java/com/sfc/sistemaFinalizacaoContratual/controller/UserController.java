@@ -29,10 +29,11 @@ public class UserController {
         userService.saveUser(user);
     }
 
-    @PutMapping("update/{id}")
+    @PutMapping("{id}")
     public void updateUser(@RequestBody User newUser, @PathVariable(name = "id") Long id) {
-        User user = userService.getUser(id);
-        if (user!=null){
+        newUser.setId(id);
+
+        if (newUser != null) {
             userService.updateUser(newUser);
         }
     }

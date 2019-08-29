@@ -28,15 +28,16 @@ public class CompanyController {
         companyService.saveCompany(company);
     }
 
-    @PutMapping("update/{id}")
-    public void updateCompany(@RequestBody Company company, @PathVariable(name = "id") Long id) {
-        Company comp = companyService.getCompany(id);
-        if (comp!=null){
+    @PutMapping("{id}")
+    public void updateWitnesses(@RequestBody Company company, @PathVariable(name = "id") Long id) {
+        company.setId(id);
+
+        if (company != null) {
             companyService.updateCompany(company);
         }
     }
 
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("{id}")
     public void deleteCompany(@PathVariable(name = "id") Long id) {
         companyService.deleteCompany(id);
     }

@@ -4,9 +4,6 @@ import java.util.Map;
 
 import javax.persistence.*;
 
-/**
- * Created by Jana on 20/06/2017.
- */
 @Entity
 public class User {
     @Id

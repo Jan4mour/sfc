@@ -5,9 +5,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-/**
- * Created by Jana on 14/07/2017.
- */
 @Entity
 public class Witnesses {
 
